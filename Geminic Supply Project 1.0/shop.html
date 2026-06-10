@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Geminic Supply</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div id="side-menu" class="side-menu">
+        <a href="geminicsupply.html">HOME</a>
+        <a href="collection.html">COLLECTION</a>
+        <a href="shop.html">SHOP</a>
+        <a href="aboutus.html">ABOUT</a>
+    </div>
+
+    <nav class="navbar">
+        <div class="menu-icon" id="menu-btn">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div style="color: white; font-weight: 900; letter-spacing: 5px; cursor:pointer;"
+            onclick="location.href='geminicsupply.html'">GEMINIC SUPPLY</div>
+        <div class="nav-right">
+            <div class="keranjang" style="cursor: pointer;" onclick="location.href='cart.html'">
+                <i class="fas fa-shopping-bag"></i>
+                <span id="cart-count">0</span>
+            </div>
+            <div class="login"><i class="fas fa-user"></i></div>
+        </div>
+    </nav>
+
+    <main class="collection-page">
+        <h2 class="section-title">OUR CATALOG</h2>
+
+        <div class="filter-container">
+            <button class="filter-btn active" onclick="filterProducts('all')">ALL</button>
+            <button class="filter-btn" onclick="filterProducts('knitwear')">KNITWEAR</button>
+            <button class="filter-btn" onclick="filterProducts('outerwear')">OUTERWEAR</button>
+        </div>
+
+        <div class="collection-grid">
+
+            <div class="product-card" data-category="knitwear">
+                <div class="product-img-wrapper" style="cursor: pointer;"
+                    onclick="openQtyModal(1, 'KNIT LONG-SLEVE DLS PINK', 899000, 'Images/DSL/image_1-2.jpg')">
+                    <img src="Images/DSL/image_1-2.jpg" alt="KNIT LONG-SLEVE DLS PINK" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3>KNIT LONG-SLEVE DLS PINK</h3>
+                    <p>IDR 899.000</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="outerwear">
+                <div class="product-img-wrapper" style="cursor: pointer;"
+                    onclick="openQtyModal(2, 'ZIP HOODIE BOXY BLACK SNS-B x CALLE', 599000, 'Images/SNSB/SNSB_1-1.jpg')">
+                    <img src="Images/SNSB/SNSB_1-1.jpg" alt="ZIP HOODIE BOXY BLACK SNS-B x CALLE" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3>ZIP HOODIE BOXY BLACK SNS-B x CALLE</h3>
+                    <p>IDR 599.000</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="outerwear">
+                <div class="product-img-wrapper" style="cursor: pointer;"
+                    onclick="openQtyModal(3, 'HOODIE BOXY BLACK SNS-B x CALLE', 750000, 'Images/SNSB/SNSB_1-2.jpg')">
+                    <img src="Images/SNSB/SNSB_1-2.jpg" alt="HOODIE BOXY BLACK SNS-B x CALLE" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3>HOODIE BOXY BLACK SNS-B x CALLE</h3>
+                    <p>IDR 750.000</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="outerwear">
+                <div class="product-img-wrapper" style="cursor: pointer;"
+                    onclick="openQtyModal(4, 'HOODIE CHMB BEDSTAR BLACK', 779000, 'Images/CHMB/CHMB_1-1.jpg')">
+                    <img src="Images/CHMB/CHMB_1-1.jpg" alt="HOODIE CHMB BEDSTAR BLACK" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3>HOODIE CHMB BEDSTAR BLACK</h3>
+                    <p>IDR 779.000</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="outerwear">
+                <div class="product-img-wrapper" style="cursor: pointer;"
+                    onclick="openQtyModal(5, 'ZIP HOODIE CHMB de PRFC BLACK', 729000, 'Images/CHMB/CHMB_1-2.jpg')">
+                    <img src="Images/CHMB/CHMB_1-2.jpg" alt="ZIP HOODIE CHMB de PRFC BLACK" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3>ZIP HOODIE CHMB de PRFC BLACK</h3>
+                    <p>IDR 729.000</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="outerwear">
+                <div class="product-img-wrapper" style="cursor: pointer;"
+                    onclick="openQtyModal(6, 'HOODIE CHMB de PRFC WHITE', 649000, 'Images/CHMB/CHMB_1-3.jpg')">
+                    <img src="Images/CHMB/CHMB_1-3.jpg" alt="HOODIE CHMB de PRFC WHITE" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3>HOODIE CHMB de PRFC WHITE</h3>
+                    <p>IDR 649.000</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="outerwear">
+                <div class="product-img-wrapper" style="cursor: pointer;"
+                    onclick="openQtyModal(7, 'HOODIE CHMB BEDSTAR WHITE', 649000, 'Images/CHMB/CHMB_1-4.jpg')">
+                    <img src="Images/CHMB/CHMB_1-4.jpg" alt="HOODIE CHMB BEDSTAR WHITE" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3>HOODIE CHMB BEDSTAR WHITE</h3>
+                    <p>IDR 649.000</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="outerwear">
+                <div class="product-img-wrapper" style="cursor: pointer;"
+                    onclick="openQtyModal(8, 'HOODIE KISS ME BLACK', 629000, 'Images/TELEPATI.CHE/TELEPATI_1-1.jpg')">
+                    <img src="Images/TELEPATI.CHE/TELEPATI_1-1.jpg" alt="HOODIE KISS ME BLACK" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3>HOODIE KISS ME BLACK</h3>
+                    <p>IDR 629.000</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="outerwear">
+                <div class="product-img-wrapper" style="cursor: pointer;"
+                    onclick="openQtyModal(9, 'HOODIE KISS ME WHITE', 589000, 'Images/TELEPATI.CHE/TELEPATI_1-2.jpg')">
+                    <img src="Images/TELEPATI.CHE/TELEPATI_1-2.jpg" alt="HOODIE KISS ME WHITE" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3>HOODIE KISS ME WHITE</h3>
+                    <p>IDR 589.000</p>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="outerwear">
+                <div class="product-img-wrapper" style="cursor: pointer;"
+                    onclick="openQtyModal(10, 'TRACK TOP SNS-B x CALLE', 499000, 'Images/SNSB/SNSB_1-3.jpg')">
+                    <img src="Images/SNSB/SNSB_1-3.jpg" alt="TRACK TOP SNS-B x  CALLE" class="product-img">
+                </div>
+                <div class="product-info">
+                    <h3>TRACK TOP SNS-B x CALLE</h3>
+                    <p>IDR 499.000</p>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 GEMINIC SUPPLY. ALL RIGHTS RESERVED.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <div id="qty-modal" class="modal-overlay">
+        <div class="modal-content">
+            <h3 id="modal-product-name">Nama Produk</h3>
+            <p id="modal-product-price">IDR 0</p>
+            <p class="modal-instruction">Berapa barang yang akan dimasukkan ke keranjang?</p>
+            <div class="qty-control">
+                <button id="minus-btn">-</button>
+                <span id="qty-number">1</span>
+                <button id="plus-btn">+</button>
+            </div>
+            <div class="modal-actions">
+                <button id="cancel-modal-btn">Batal</button>
+                <button id="confirm-modal-btn">Masukkan Keranjang</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
